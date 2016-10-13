@@ -1,0 +1,55 @@
+.c-nav {
+	@extend %abs;
+	top: 75px;
+	right: 10px;
+	
+	li {
+		float: left;
+		padding: 0 13px;
+		
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	&__link {
+		font-family: $sequel;
+		text-transform: uppercase;
+		color: $c-yellow--darker;
+		
+		&:hover {
+			border-bottom: 4px solid $c-blue--nav;
+			color: $c-blue--nav;
+		}
+	}
+	
+	&__social {
+		position: relative;
+		top: -5px;
+		display: inline-block;
+		width: 36px; height: 36px;
+		border-radius: 6px;
+		background-color: $c-blue--nav;
+		text-align: center;
+		font-size: em(26);
+		color: white;
+		
+		&:hover {
+			background-color: darken($c-blue--nav, 10%);
+			color: white;
+		}
+	}
+	
+	.icon-f {
+		padding: {
+			top: 5px;
+			left: 5px;
+		}
+		font-size: em(31);
+	}
+	
+	.icon-instagram {
+		padding-left: 1px;
+		line-height: 36px;
+	}
+}

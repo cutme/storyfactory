@@ -1,0 +1,115 @@
+[class^="icon-"], [class*=" icon-"] {
+	@include icomoon;
+}
+
+.border-bottom {
+	padding-bottom: 80px;
+	border-bottom: 1px solid #2b2929;
+}
+
+.fs-21 {
+	font-size: em(21);
+}
+
+.fs-23 {
+	font-size: em(23);
+}
+
+.fs-25 {
+	font-size: em(25);
+}
+
+.fs-26 {
+	font-size: em(26);
+}
+
+.fs-27 {
+	font-size: em(27);
+}
+
+.fs-22 {
+	font-size: em(22);
+}
+
+.fs-36 {
+	font-size: em(36);
+}
+
+.full {
+	width: 100%;
+}
+
+.gt {
+	&:after {
+		content: ' »';
+	}
+}
+
+.margin-bottom {
+	margin-bottom: 60px !important;
+}
+
+.margin-bottom--big {
+	margin-bottom: 80px !important;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.push-left {
+	float: left;
+}
+
+.push-right {
+	float: right;
+}
+
+.safari {
+	* {
+		-webkit-backface-visibility: hidden;
+		-webkit-transform-style: preserve-3d;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.text-up {
+	text-transform: uppercase;
+}
+
+.weight-medium {
+	font-weight: $medium;
+}
+
+.weight-semibold {
+	font-weight: $semibold;
+}
+
+/* IE */
+
+@media screen and (max-width:400px) {
+    @-ms-viewport{
+        width:320px;
+    }
+}
+
+.owl-carousel .owl-item img {
+	width: inherit;
+}
+
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}

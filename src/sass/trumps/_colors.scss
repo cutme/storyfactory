@@ -1,0 +1,19 @@
+.bg-gradient--blue {
+	background-image: linear-gradient($c-blue--brighter, $c-blue--darker);
+}
+
+.bg-gradient--yellow {
+	background-image: linear-gradient($c-yellow--brighter, $c-yellow--darker);
+}
+
+.color-blue {
+	color: $c-blue--text;
+}
+
+.color-blue--darker {
+	color: $c-blue--text2;
+}
+
+.color-white {
+	color: white;
+}

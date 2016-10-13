@@ -1,0 +1,23 @@
+{
+  "name": "storyfactory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-file-include": "^0.14.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass-glob": "^1.0.6",
+    "gulp-uglify": "^2.0.0",
+    "gulp.spritesmith": "^6.2.1",
+    "merge-stream": "^1.0.0",
+    "node-sass": "^3.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bartosz mediger (cutme.pl)",
+  "license": "ISC"
+}

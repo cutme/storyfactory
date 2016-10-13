@@ -1,0 +1,14 @@
+.o-typo {
+	p {
+		margin-bottom: 1.5em;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	table {
+		width: 100%;
+		vertical-align: middle;
+	}
+}

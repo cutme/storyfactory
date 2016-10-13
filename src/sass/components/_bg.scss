@@ -1,0 +1,15 @@
+.c-bg {
+	&--home {
+		height: 242px;
+		background: {
+			image: url(../img/bg/home.png);
+			repeat: no-repeat;
+			position: center;
+			color: $c-blue;
+		}
+	}
+	
+	.o-wrap {
+		height: 100%;
+	}
+}

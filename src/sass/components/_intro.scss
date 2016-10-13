@@ -1,0 +1,19 @@
+.c-intro {
+	min-height: 310px;
+	background: {
+		image: url(../img/pictures/robots-1.png);
+		repeat: no-repeat;
+	}
+	margin: -125px 0 125px 0;
+	padding-top: 150px;
+	text-align: center;
+	color: $c-blue;
+
+	&__lead {
+		margin-bottom: 20px;
+		font: {
+			family: $pacifico;
+			size: em(29);
+		}
+	}
+}

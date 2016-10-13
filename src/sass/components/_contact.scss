@@ -1,0 +1,30 @@
+.c-contact {
+	height: 500px;
+	background: {
+		image: url(../img/bg/contact.png);
+		repeat: no-repeat;
+		position: center;
+	}
+	color: $c-blue;
+	
+	&__address {
+		@extend %abs;
+		left: 150px;
+		top: 260px;
+		transform: rotate(-4deg);
+		text-align: center; 		
+		font: {
+			family: $bariol;
+			size: em(21);
+			weight: $bold;
+		}
+		
+		p {
+			margin-bottom: 6px;
+		}
+		
+		a:hover {
+			border-bottom: 2px solid $c-blue;
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.c-references {
+	position: relative;
+	min-height: 540px;
+	background: {
+		image: url(../img/bg/references.png);
+		repeat: no-repeat;
+		position: center;
+		color: $c-yellow--references;
+	}
+	padding: 80px 0;
+	
+	cite {
+		display: block;
+		margin-bottom: 15px;
+		font: {
+			weight: $semibold;
+			style: italic;
+		}
+		
+		&:before, &:after {
+			content: '"';
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		min-height: 380px;
+		padding: 20px 0;
+	}
+	
+	&__holder {
+		@extend %abs;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 905px;
+		height: calc(100% - 160px);
+	}
+	
+	&__inside {
+		position: relative;
+		width: 865px;
+		margin: 0 auto;
+		background-color: rgba(white, .55);
+		padding: 25px;
+		border-radius: 20px;
+		color: $c-blue--references;
+		
+		&:before {
+			@extend %abs;
+			@include icomoon;
+		}
+	}
+	
+	&__item {		
+		&:first-of-type {
+			align-self: flex-start;
+			
+			.c-references__inside {				
+				&:before {
+					left: -20px; top: -20px;
+					font-size: em(56);
+					content: "\e903";
+				}
+			}
+		}
+
+		&:last-of-type {
+			align-self: flex-end;
+			
+			.c-references__inside {				
+				&:before {
+					right: -20px; bottom: -20px;
+					font-size: em(56);
+					content: "\e901";
+				}
+			}
+
+		}
+	}
+	
+}

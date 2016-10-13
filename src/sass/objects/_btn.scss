@@ -1,0 +1,14 @@
+.o-btn {
+	display: inline-block;
+
+	&--ask {
+		width: 250px;
+		height: 93px;
+		overflow: hidden;
+		text-indent: -1000px;
+		background: {
+			image: url(../img/btn-ask.png);
+		}
+		
+	}
+}

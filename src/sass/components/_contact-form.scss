@@ -1,0 +1,51 @@
+.c-contact-form {
+	@extend %abs;
+	left: 400px;
+	top: 198px;
+	transform: rotate(-4deg);
+	
+	&__inputs {
+		float: left;
+		width: 220px;
+		padding-right: 60px;
+	}
+	
+	&__message {
+		float: left;
+		width: 250px;
+	}
+	
+	.row {
+		margin-bottom: 35px;
+		
+		&__phone {
+			padding-left: 20px;
+		}
+		
+		&__email {
+			padding-left: 10px;
+		}
+	}
+	
+	textarea {
+		height: 130px;
+	}
+
+	input, textarea {
+		font: {
+			size: em(16);
+			family: $avenir;
+		}
+	}
+
+	input {
+		&[type=text],
+		&[type=email] {
+			color: $c-yellow--references;
+		}
+	}
+	
+	@include input-placeholder {
+		color: $c-yellow--references;;
+	}
+}

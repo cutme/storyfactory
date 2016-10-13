@@ -1,0 +1,25 @@
+%abs {
+	position: absolute;
+	z-index: 5;
+}
+
+%anim {
+	@include transition-property(all);
+	@include transition-duration(200ms);
+	@include transition-timing-function(ease-in-out);
+}
+
+%antialias {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+%clear {
+	clear: both;
+	
+	&:after {
+		clear: both;
+		display: block;
+		content: '';
+	}
+}

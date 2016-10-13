@@ -1,0 +1,19 @@
+h2, h3, h4, h5, h6 {
+	line-height: 1;
+	/*
+font: {
+		family: $header;
+		weight: $regular;
+	}
+*/
+}
+
+
+h2 {
+	margin-bottom: 35px;
+	font: {
+		family: $bariol;
+		size: em(42);
+		weight: $bold;
+	}
+}

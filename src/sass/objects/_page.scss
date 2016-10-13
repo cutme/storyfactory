@@ -1,0 +1,9 @@
+.o-page {
+	@extend %clear;
+	padding: 130px 0;
+	
+	&__text {
+		width: 460px;
+		
+	}
+}

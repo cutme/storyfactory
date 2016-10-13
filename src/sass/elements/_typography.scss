@@ -1,0 +1,34 @@
+body {
+	@include antialias;
+	line-height: 1.15;
+/*
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+*/
+	text-rendering: optimizeSpeed;
+	
+	font: {
+		family: $text;
+		size: #{$base-font-size}px;
+		weight: $regular;
+	}
+	color: black;
+}
+
+a {
+	@extend %anim;
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+	
+	&:hover,
+    &:active,
+    &:focus {
+        color: inherit;
+        outline: none;
+    }
+}
+
+strong {
+	font-weight: $bold;
+}

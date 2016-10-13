@@ -1,0 +1,21 @@
+{
+  "name": "storyfactory",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "bartosz mediger (cutme.pl)"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  	"jquery": "~2.2.0",
+    "owl.carousel": "^2.1.6"
+  }
+}

@@ -1,0 +1,11 @@
+article {
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+	p {
+		margin-bottom: 2em;
+	}
+}

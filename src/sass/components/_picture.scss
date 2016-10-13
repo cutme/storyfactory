@@ -1,0 +1,22 @@
+.c-picture {
+	&--article {
+		//width: 516
+	}
+	&--blog{
+//		width: grid(480);
+	}
+	
+	&--communication {
+//		width: 570px;
+	}
+	
+	&--descriptions {
+//		width: 490px;
+	}
+	
+	&--robots-2 {
+		@extend %abs;
+		right: 0; top: -180px;
+		width: 480px;
+	}
+}
