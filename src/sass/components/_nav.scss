@@ -13,7 +13,10 @@
 	}
 
 	&__link {
-		font-family: $sequel;
+		font: {
+			family: $bebasneue;
+			size: em(24);
+		}
 		text-transform: uppercase;
 		color: $c-yellow--darker;
 		

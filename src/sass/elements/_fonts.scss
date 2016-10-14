@@ -1,4 +1,14 @@
 @include font-face-db( 'avenir', 'avenir-regular/AvenirNextLTProRegular', $regular);
 @include font-face-db( 'sequel-regular', 'sequel-regular/SequelRegular', $regular);
 @include font-face-db( 'bariol-bold', 'bariol-bold/Bariol_Bold', $bold);
+
+@include font-face-db( 'bebasneue', 'bebasneue/BebasNeue', $regular);
+
+@include font-face-db( 'neosanspro', 'neosanspro-bold/NeoSansProBold', $bold);
+@include font-face-db( 'neosanspro', 'neosanspro-light/NeoSansProLight', $light);
+@include font-face-db( 'neosanspro', 'neosanspro-medium/NeoSansProMedium', $medium);
+@include font-face-db( 'neosanspro', 'neosanspro-regular/NeoSansPro', $regular);
+
+@include font-face-db( 'simplejoys', 'simplejoys/simplejoys', $regular);
+
 @include font-face-db( 'icomoon', 'icomoon/icomoon', $regular);
