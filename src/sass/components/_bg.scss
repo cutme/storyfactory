@@ -1,4 +1,5 @@
 .c-bg {
+
 	&--home {
 		height: 242px;
 		background: {
@@ -12,4 +13,12 @@
 	.o-wrap {
 		height: 100%;
 	}
+	
+	@media screen and ( max-width: $grid-base-width + px ) {
+		&--home {
+			height: 23.2vw;
+			background-size: cover;
+		}
+	}
+	
 }

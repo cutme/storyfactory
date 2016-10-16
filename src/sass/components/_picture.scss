@@ -1,22 +1,40 @@
 .c-picture {
-	&--article {
-		//width: 516
-	}
-	&--blog{
-//		width: grid(480);
-	}
+
 	
-	&--communication {
-//		width: 570px;
+	@media screen and ( min-width: 561px ) {
+		&--article {
+			width: grid(516, $grid-base-width - $padding);
+		}
+		
+		&--blog{
+			width: grid(480, $grid-base-width - $padding);
+		}
+		
+		&--communication {
+			width: grid(570, $grid-base-width - $padding);
+		}
+		
+		&--descriptions {
+			width: grid(490, $grid-base-width - $padding);
+			margin: 40px auto 0 auto;
+		}
+		
+		&--robots-2 {
+			@extend %abs;
+			right: 0; top: -180px;
+			width: grid(480, $grid-base-width - $padding);
+		}
 	}
-	
-	&--descriptions {
-//		width: 490px;
-	}
-	
-	&--robots-2 {
-		@extend %abs;
-		right: 0; top: -180px;
-		width: 480px;
+
+	@media screen and ( max-width: 560px ) {
+
+		&--robots-2 {
+			position: relative;
+		}
+		
+		.o-media {
+			display: block;
+			margin: 0 auto;
+		}
 	}
 }

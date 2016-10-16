@@ -1,0 +1,55 @@
+.c-backstage {
+	background-color: $c-blue--darkest;
+	padding: 110px 0;
+	line-height: 1.5;
+	color: $c-white--darker;
+	
+	
+		
+	h2 {
+		margin-bottom: .5em;
+		font: {
+			size: em(42);
+			family: $bariol;
+			weight: $bold;
+		}
+	}
+	
+	h4 {
+		margin-bottom: 1em;
+		font: {
+			size: em(28);
+			weight: $medium;
+		}
+	}
+	
+	p {
+		text-align: justify;
+	}
+	
+	strong {
+		font-weight: $medium;
+	}
+
+	&__picture {
+		margin-bottom: 60px;
+	}
+	
+	
+}
+
+.c-backstage-author {
+	display: inline-block;
+	margin: 0 30px 20px 30px;
+	
+	&__avatar {
+		margin-bottom: 10px;
+	}
+	
+	&__name {
+		font-family: $bariol;
+		font-size: em(40);
+		font-weight: $bold;
+		color: $c-yellow--brightest;
+	}
+}

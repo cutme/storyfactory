@@ -1,18 +1,19 @@
 .c-materials {
-	padding-top: 230px;
-
 	&__content {
 		position: relative; z-index: 5;
 		padding: 35px 0;
 		
-		&:after {
+		&:after, &:before {
 			@extend %abs;
-			z-index: -1;
-			left: 0; top: 0;
+			width: 100%;
 			display: block;
 			content: ' ';
-			width: 100%;
 			height: 288px;
+		}
+		
+		&:after {
+			z-index: -1;
+			left: 0; top: 0;
 			background: {
 				image: url(../img/bg/lightblue.png);
 				repeat: no-repeat;
@@ -21,20 +22,29 @@
 		}
 
 		&:before {
-			@extend %abs;
 			z-index: -2;
 			left: 0; top: 0;
-			display: block;
-			content: ' ';
-			width: 100%;
-			height: 288px;
 			background-color: #bceeff;
-		}
-		
-		article {
-			width: 490px;
 		}
 	}
 	
+	@media screen and ( min-width: 561px ) {
+		padding-top: 200px;
+		
+		&__content {
+			article {
+				width: grid(490, $grid-base-width - $padding);
+			}
+		}
+	}
 	
+	@media screen and ( max-width: 375px ) {
+		&__content {
+			
+			&:after, &:before {
+				
+			}
+			
+		}
+	}
 }

@@ -3,4 +3,12 @@
 	left: 0; top: 10px;
 	display: block;
 	width: 105px;
+	
+	@media screen and ( max-width: $grid-base-width+px ) {
+		left: 10px;
+	}
+	
+	@media screen and ( max-width: 320px ) {
+		width: 95px;
+	}
 }

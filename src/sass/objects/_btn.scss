@@ -1,14 +1,23 @@
 .o-btn {
 	display: inline-block;
-
+	overflow: hidden;
+	text-indent: -1000px;
+		
 	&--ask {
 		width: 250px;
 		height: 93px;
-		overflow: hidden;
-		text-indent: -1000px;
-		background: {
-			image: url(../img/btn-ask.png);
-		}
-		
+		background-image: url(../img/btn-ask.png);
 	}
+	
+	&--submit {
+		width: 218px;
+		height: 84px;
+		background-image: url(../img/btn-submit.png);
+	}
+	
+	@media screen and ( max-width: 560px ) {
+		display: block;
+		margin: 0 auto 20px auto;
+	}
+	
 }

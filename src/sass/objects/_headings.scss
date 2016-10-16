@@ -1,5 +1,7 @@
 h2, h3, h4, h5, h6 {
-	line-height: 1;
+	line-height: 1.1;
+	font-family: $bariol;
+
 	/*
 font: {
 		family: $header;
@@ -12,8 +14,11 @@ font: {
 h2 {
 	margin-bottom: 35px;
 	font: {
-		family: $bariol;
 		size: em(42);
 		weight: $bold;
+	}
+	
+	@media screen and ( min-width: 561px ) and ( max-width: $grid-base-width + px ) {
+		font-size: 4vw;	
 	}
 }

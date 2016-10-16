@@ -1,0 +1,17 @@
+.c-table {
+	
+	@media screen and ( min-width: $grid-base-width + 1 + px ) {
+		display: table;
+		width: 100%;
+		
+		
+		&__row {
+			display: table-row;
+		}
+		
+		&__cell {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}

@@ -1,9 +1,6 @@
 .c-contact-form {
-	@extend %abs;
-	left: 400px;
-	top: 198px;
-	transform: rotate(-4deg);
-	
+	width: 470px;
+
 	&__inputs {
 		float: left;
 		width: 220px;
@@ -15,16 +12,10 @@
 		width: 250px;
 	}
 	
+	
+
 	.row {
-		margin-bottom: 35px;
-		
-		&__phone {
-			padding-left: 20px;
-		}
-		
-		&__email {
-			padding-left: 10px;
-		}
+		margin-bottom: 35px;		
 	}
 	
 	textarea {
@@ -47,5 +38,87 @@
 	
 	@include input-placeholder {
 		color: $c-yellow--references;;
+	}
+	
+	@media screen and ( min-width: 815px ) {
+		@extend %abs;
+		left: 310px;
+		top: 200px;
+		transform: rotate(-4deg);
+		
+		.o-btn--submit {
+			position: absolute;
+			right: 0; bottom: -70px;
+			z-index: 10;
+		}
+
+		.row {
+			&__phone {
+				padding-left: 20px;
+			}
+			
+			&__email {
+				padding-left: 10px;
+			}	
+		}
+	}
+	
+	@media screen and ( max-width: 814px ) {
+		position: relative;
+		width: grid(600, 766);
+		margin: 0 auto;
+		
+		input, textarea {
+			background-color: $c-yellow--references;
+			padding: 10px 20px;
+			border-radius: 10px;
+		}
+		
+		input {
+			height: 40px;
+			line-height: 38px;
+		}
+		
+		&__inputs, &__message {
+			margin-bottom: 20px;
+		}
+		
+		&__inputs {
+			width: grid(260, 600);
+			padding-right: 10px;
+		}
+		
+		&__message {
+			width: grid(340, 600);
+		}
+		
+		.o-btn--submit {
+			display: block;
+			margin: 0 auto;
+		}
+		
+		.row {
+			margin-bottom: 15px;
+		}
+		
+		textarea {
+			height: 150px;
+		}
+		
+		@include input-placeholder {
+			color: $c-blue;
+		}
+	}
+	
+	@media screen and ( max-width: 640px ) {
+		width: 100%;
+	}
+	
+	@media screen and ( max-width: 440px ) {
+		&__inputs, &__message {
+			float: none;
+			width: 100%;
+			padding: 0;
+		}
 	}
 }

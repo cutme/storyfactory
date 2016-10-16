@@ -1,17 +1,16 @@
 .c-contact {
-	height: 500px;
-	background: {
-		image: url(../img/bg/contact.png);
-		repeat: no-repeat;
-		position: center;
-	}
 	color: $c-blue;
 	
+	p {
+		font-size: em(19);
+	}
+	
+	.o-wrap {
+		max-width: 815px;
+		height: 100%;
+	}
+	
 	&__address {
-		@extend %abs;
-		left: 150px;
-		top: 260px;
-		transform: rotate(-4deg);
 		text-align: center; 		
 		font: {
 			family: $bariol;
@@ -27,4 +26,36 @@
 			border-bottom: 2px solid $c-blue;
 		}
 	}
+	
+	@media screen and ( min-width: 815px ) {
+		height: 500px;
+		background: {
+			image: url(../img/bg/contact.png);
+			repeat: no-repeat;
+			position: center;
+		}
+		
+		&__address {
+			@extend %abs;
+			left: 50px;
+			top: 260px;
+			transform: rotate(-4deg);
+		}
+	}
+	
+	@media screen and ( max-width: 814px ) {
+		background-color: $c-blue;
+		padding: 40px 0;
+		
+		&__address {
+			position: relative;
+			margin-bottom: 40px;
+			color: $c-yellow;
+			
+			a:hover {
+				border-bottom: 2px solid $c-yellow;
+			}
+		}
+	}
+	
 }

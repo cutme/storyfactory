@@ -3,6 +3,7 @@
 	background: {
 		image: url(../img/pictures/robots-1.png);
 		repeat: no-repeat;
+		size: contain;
 	}
 	margin: -125px 0 85px 0;
 	padding-top: 150px;
@@ -19,6 +20,37 @@
 		
 		&:before, &:after {
 			content: '"';
+		}
+	}
+	
+	@media screen and ( min-width: 561px ) and ( max-width: $grid-base-width + px ) {
+		margin-bottom: 8vw;
+
+		&__lead {
+			font-size: 4.2vw;
+		}
+		
+		&__text {
+			width: grid(500);
+			margin: 0 auto;
+		}
+		
+		
+	}
+	
+	@media screen and ( max-width: $grid-base-width + px ) {
+		margin-bottom: 2vw;
+	}
+	
+	@media screen and ( max-width: 560px ) {
+		margin-bottom: 0;
+
+		&__lead {
+			font-size: 8vw;
+		}
+		
+		p {
+			font-size: 3.9vw;
 		}
 	}
 }

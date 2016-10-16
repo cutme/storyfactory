@@ -2,8 +2,18 @@
 	@extend %clear;
 	padding: 130px 0;
 	
-	&__text {
-		width: 460px;
-		
+	@media screen and ( min-width: 561px ) {
+		&__text {
+			width: grid(460, $grid-base-width - $padding);
+		}
+	}
+	
+	@media screen and ( max-width: $grid-base-width + px ) {
+		padding: 70px 0;
+	}
+	
+	@media screen and ( max-width: 480px ) {
+		padding: 40px 0;
+		font-size: 60%;
 	}
 }

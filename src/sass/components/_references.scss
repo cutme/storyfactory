@@ -1,6 +1,5 @@
 .c-references {
 	position: relative;
-	min-height: 540px;
 	background: {
 		image: url(../img/bg/references.png);
 		repeat: no-repeat;
@@ -23,25 +22,18 @@
 	}
 
 	&__content {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		min-height: 380px;
+		
 		padding: 20px 0;
 	}
 	
 	&__holder {
-		@extend %abs;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 905px;
-		height: calc(100% - 160px);
+
+		max-width: 904px;
 	}
 	
 	&__inside {
 		position: relative;
-		width: 865px;
+		width: calc(100% - 40px);
 		margin: 0 auto;
 		background-color: rgba(white, .55);
 		padding: 25px;
@@ -54,14 +46,21 @@
 		}
 	}
 	
-	&__item {		
+	&__item {	
+		width: 100%;
+		
+		.c-references__inside {	
+			&:before {
+				font-size: em(56);
+			}
+		}
+	
 		&:first-of-type {
 			align-self: flex-start;
 			
 			.c-references__inside {				
 				&:before {
 					left: -20px; top: -20px;
-					font-size: em(56);
 					content: "\e903";
 				}
 			}
@@ -73,12 +72,93 @@
 			.c-references__inside {				
 				&:before {
 					right: -20px; bottom: -20px;
-					font-size: em(56);
 					content: "\e901";
 				}
 			}
+		}
+	}
 
+	@media screen and ( max-width: $grid-base-width + px ) {
+		&__author {
+		    font-size: 2.1vw;
+		}
+	}
+
+	@media screen and ( min-width: 904px ) {
+		&__holder {
+			
 		}
 	}
 	
+	@media screen and ( max-width: 768px ) {
+		cite {
+			font-size: 2.4vw;
+		}
+	}
+	
+	@media screen and ( max-width: 640px ) {
+		padding: 40px 0;
+		
+		cite {
+			font-size: 3vw;
+		}
+		
+		&__item {
+			.c-references__inside {	
+				&:first-of-type {
+					
+				}
+				&:before {
+					font-size: em(46);
+				}
+			}
+		}
+		
+		&__inside {
+			padding: 15px;
+		}
+	}
+	
+	@media screen and ( min-width: 641px ) {
+		min-height: 540px;
+
+		&__content {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			min-height: 380px;
+		}
+		
+		&__holder {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			height: calc(100% - 160px);
+		}
+	}
+	
+	@media screen and ( max-width: 640px ) {
+		&__item {
+			margin-bottom: 20px;
+		}
+	}
+	
+	@media screen and ( max-width: 480px ) {
+		
+		cite {
+			font-size: 3.5vw;
+		}
+		
+		
+		
+		&__content {
+			min-height: none;
+		}
+		
+		&__holder {
+			max-width: none;
+			height: auto;
+		}
+	}
 }

@@ -1,6 +1,11 @@
 .o-media {
 	position: relative; z-index: 1;
-	display: block;
+	display: inline-block;
 	max-width: 100%;
 	height: auto;
+	
+	&--center {
+		display: block;
+		margin: 0 auto;
+	}
 }
