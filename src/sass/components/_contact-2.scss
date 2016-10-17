@@ -1,0 +1,86 @@
+.c-contact-2 {
+	position: relative;
+	max-width: 1920px;
+	background: {
+		image: url(../img/bg/contact-2.jpg);
+		size: cover;
+	}
+	
+	&__bg {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__box {
+		@include scut-center-transform(y);
+		position: absolute;
+		right: 196px;
+		z-index: 5;
+		width: 681px;
+	}
+	
+	&__details {
+		position: absolute;
+		left: 0; top: calc(50% + 40px);
+		z-index: 10;
+		width: 100%;
+		
+		p {
+			margin-bottom: 20px;
+			text-align: center;
+			font: {
+				size: em(41);
+				family: $bariol;
+				weight: $bold;
+			}
+			color: $c-blue--nav;
+	
+			a {
+				display: inline;
+
+				&:hover {
+					border-bottom: 2px solid $c-blue--nav;
+				}
+			}
+		}
+		
+	}
+	
+	@media screen and ( max-width: 1920px ) {
+		&__box {
+			right: grid(196, 1920);
+			width: grid(681, 1920);
+		}		
+		
+		&__details {
+			top: calc(50% + 2.1vw);
+
+			p {
+				margin-bottom: 1.1vw;
+				font-size: 2.1vw;
+			}
+		}
+	}
+	
+	@media screen and ( max-width: 480px ) {
+		height: 300px;
+		
+		&__bg {
+			display: none;
+		}
+
+		&__box {
+			@include scut-center-transform;
+			width: 80%;
+		}		
+		
+		&__details {
+			top: calc(50% + 2.1vw);
+
+			p {
+				font-size: 4.1vw;
+			}
+		}
+	}
+	
+}
