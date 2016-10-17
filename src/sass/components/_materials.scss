@@ -1,4 +1,13 @@
 .c-materials {
+
+
+	h2 {
+		position: relative;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	
+	
 	&__content {
 		position: relative; z-index: 5;
 		padding: 35px 0;
@@ -31,10 +40,27 @@
 	@media screen and ( min-width: 561px ) {
 		padding-top: 200px;
 		
+		h2 {
+			position: absolute;
+			top: -140px;
+		}
+		
 		&__content {
 			article {
 				width: grid(490, $grid-base-width - $padding);
 			}
+		}
+	}
+	
+	@media screen and ( max-width: 560px ) {
+		&__content {
+			&:after, &:before {
+				height: 388px;
+			}
+		}
+		
+		br {
+			display: none;
 		}
 	}
 	
