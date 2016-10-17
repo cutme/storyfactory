@@ -2,7 +2,7 @@
 	@extend %clear;
 	padding: 40px 0;
 	
-	@media screen and ( min-width: 561px ) {
+	@media screen and ( min-width: 641px ) {
 		&__text {
 			width: grid(460, $grid-base-width - $padding);
 		}
@@ -12,7 +12,14 @@
 //		padding: 70px 0;
 	}
 	
+	@media screen and ( max-width: 640px ) {
+		&__text {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	
 	@media screen and ( max-width: 480px ) {
-		font-size: 60%;
+		font-size: 70%;
 	}
 }

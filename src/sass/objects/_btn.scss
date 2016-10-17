@@ -31,4 +31,12 @@
 			background-image: url(../img/btn/submit-small--yellow.png);
 		}
 	}
+	
+	@media screen and ( max-width: 640px ) {
+		&--ask {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	
 }

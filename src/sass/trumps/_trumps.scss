@@ -43,7 +43,7 @@
 	font-size: em(36);
 }
 
-@media screen and ( min-width: 561px ) and ( max-width: $grid-base-width + px ) {
+@media screen and ( min-width: 641px ) and ( max-width: $grid-base-width + px ) {
 	p {
 	    font-size: 1.79vw;
 	}
@@ -136,7 +136,8 @@
 	font-weight: $medium;
 }
 
-@media screen and ( min-width: 561px ) {
+//@media screen and ( min-width: 561px ) {
+@media screen and ( min-width: 640px ) {
 	.push-left {
 		float: left;
 	}

@@ -1,7 +1,7 @@
 .c-picture {
 
 	
-	@media screen and ( min-width: 561px ) {
+	@media screen and ( min-width: 641px ) {
 		&--article {
 			width: grid(516, $grid-base-width - $padding);
 		}
@@ -26,7 +26,7 @@
 		}
 	}
 
-	@media screen and ( max-width: 560px ) {
+	@media screen and ( max-width: 640px ) {
 
 		&--robots-2 {
 			position: relative;

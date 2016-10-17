@@ -18,7 +18,7 @@ h2 {
 		weight: $bold;
 	}
 	
-	@media screen and ( min-width: 561px ) and ( max-width: $grid-base-width + px ) {
+	@media screen and ( min-width: 641px ) and ( max-width: $grid-base-width + px ) {
 		font-size: 4vw;	
 	}
 }

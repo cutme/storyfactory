@@ -23,7 +23,7 @@
 		}
 	}
 	
-	@media screen and ( min-width: 561px ) and ( max-width: $grid-base-width + px ) {
+	@media screen and ( min-width: 641px ) and ( max-width: $grid-base-width + px ) {
 		margin-bottom: 8vw;
 
 		&__lead {
@@ -42,7 +42,7 @@
 		margin-bottom: 2vw;
 	}
 	
-	@media screen and ( max-width: 560px ) {
+	@media screen and ( max-width: 640px ) {
 		margin-bottom: 0;
 
 		&__lead {
