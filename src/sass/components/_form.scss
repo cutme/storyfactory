@@ -1,0 +1,61 @@
+.c-form {
+	position: relative;
+	width: 300px;
+	height: 519px;
+
+	input, textarea {
+		font: {
+			size: 12px;
+			family: $bariol;
+			weight: $bold;
+		}
+		color: $c-blue;
+	}
+	
+	textarea {
+		height: 40px;
+	}
+	
+	@include input-placeholder {
+		color: $c-blue;
+	}
+
+	.row {
+		margin-bottom: 18px;		
+	}
+	
+	&--blue {
+		background-image: url(../img/form--blue.png);
+	}
+	
+	&--yellow {
+		background-image: url(../img/form--yellow.png);
+	}
+	
+	&__inputs,
+	&__message {
+		@extend %abs;
+		left: 0;
+		width: 100%;
+		padding: 0 65px;
+	}
+	
+	&__inputs {
+		top: 244px;
+		transform: rotate(-1deg);
+	}
+	
+	&__message {
+		top: 370px;
+		transform: rotate(4deg);
+		
+	}
+	
+	@media screen and ( max-width: 560px ) {
+		margin: 0 auto 20px auto;
+	}
+	
+	@media screen and ( max-width: 480px ) {
+		font-size: 160%;
+	}
+}

@@ -2,22 +2,33 @@
 	display: inline-block;
 	overflow: hidden;
 	text-indent: -1000px;
+	cursor: pointer;
 		
 	&--ask {
 		width: 250px;
 		height: 93px;
-		background-image: url(../img/btn-ask.png);
+		background-image: url(../img/btn/ask.png);
 	}
 	
 	&--submit {
 		width: 218px;
 		height: 84px;
-		background-image: url(../img/btn-submit.png);
+		background-image: url(../img/btn/submit.png);
 	}
 	
-	@media screen and ( max-width: 560px ) {
-		display: block;
-		margin: 0 auto 20px auto;
+	&--submit-small {
+		@extend %abs;
+		right: 30px; bottom: 42px;
+		z-index: 10;
+		width: 118px;
+		height: 54px;
+		
+		.c-form--blue & {
+			background-image: url(../img/btn/submit-small--blue.png);
+		}
+		
+		.c-form--yellow & {
+			background-image: url(../img/btn/submit-small--yellow.png);
+		}
 	}
-	
 }

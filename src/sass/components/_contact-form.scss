@@ -114,6 +114,13 @@
 		width: 100%;
 	}
 	
+	@media screen and ( max-width: 560px ) {
+		.o-btn {
+			display: block;
+			margin: 0 auto 20px auto;
+		}
+	}
+
 	@media screen and ( max-width: 440px ) {
 		&__inputs, &__message {
 			float: none;
@@ -121,4 +128,6 @@
 			padding: 0;
 		}
 	}
+	
+	
 }
