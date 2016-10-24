@@ -1,13 +1,11 @@
 .c-materials {
 
-
 	h2 {
 		position: relative;
 		text-align: left;
 		text-transform: uppercase;
 	}
-	
-	
+
 	&__content {
 		position: relative; z-index: 5;
 		padding: 35px 0;
@@ -37,7 +35,7 @@
 		}
 	}
 	
-	@media screen and ( min-width: 561px ) {
+	@media screen and ( min-width: 641px ) {
 		padding-top: 200px;
 		
 		h2 {
@@ -52,7 +50,7 @@
 		}
 	}
 	
-	@media screen and ( max-width: 560px ) {
+	@media screen and ( max-width: 640px ) {
 		&__content {
 			&:after, &:before {
 				height: 388px;

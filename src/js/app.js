@@ -61,6 +61,7 @@ jQuery(function($) {
 		references: function() {
 			var owl = $('.owl-carousel');
 				owl.owlCarousel({
+					dots: true,
 					autoplay: true,
 					items: 1,
 					loop: true
