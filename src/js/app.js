@@ -31,7 +31,8 @@ jQuery(function($) {
 				nav = $('.c-nav'),
 				nav__item = $('.c-nav__link', nav);
 			
-			nav__item.on('click', function(e) {
+			/*
+nav__item.on('click', function(e) {
 				target = $(this).attr('href');
 				b.removeClass('no-scroll');
 
@@ -45,12 +46,34 @@ jQuery(function($) {
 					goToTarget(target);
 				}
 			});
+*/
 
 			trigger.on('click', function(e) {
 				e.preventDefault();
 				$(this).toggleClass('is-active');
 				nav.toggleClass('is-active');
 				b.toggleClass('no-scroll');
+			});
+			
+			$('> ul > li', nav).on('click', function(e) {
+				if ( $('.sub-menu', this).length > 0 ) {
+					e.preventDefault();
+					if ($(window).width()<=768) {
+						if ( $('.sub-menu', this).length > 0 ) {
+							$('.sub-menu', this).slideToggle();					
+						}
+					}
+				}
+			});
+			
+			$('> ul > li .sub-menu a', nav).on('click', function(e) {
+				e.stopPropagation();
+			});
+			
+			$(window).resize(function() {
+				trigger.removeClass('is-active');
+				nav.removeClass('is-active');
+				$('.sub-menu', nav).removeAttr('style');
 			});
 		},
 		init: function() {
