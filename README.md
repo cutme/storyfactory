@@ -1,2 +1,2 @@
 # StoryFactory
-Live: http://storyfactory.pl
+Live: [storyfactory.pl](http://storyfactory.pl)
